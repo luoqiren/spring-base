@@ -94,10 +94,10 @@ public class CyclicBarrierDemo {
         		System.out.println("士兵" + i + "报道! ");
         		allSoldier[i] = new Thread(new Soldier(cyclic, "士兵" + i));
         		allSoldier[i].start();
-        		if (i==8) {
-        			cyclic.reset();//
-        			//allSoldier[1].interrupt();
-				}
+//        		if (i==8) {
+//        			cyclic.reset();//
+//        			//allSoldier[1].interrupt();
+//				}
         	}
 //		}
     }
